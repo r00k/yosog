@@ -2,5 +2,5 @@ module Handler.Echo where
 
 import Import
 
-getEchoR :: String -> Handler Html
-getEchoR string = error "Not yet implemented: getEchoR"
+getEchoR :: Text -> Handler Html
+getEchoR text = defaultLayout $(widgetFile "echo")
